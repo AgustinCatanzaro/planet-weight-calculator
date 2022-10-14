@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@500&family=Raleway:wght@200&display=swap"
+        rel="stylesheet">
+
+    <script type="text/javascript" src="./js/script.js"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <h1 class="main-title">Calculate the weight of an object on a planet</h1>
+    </header>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <form class="planet-form">
+            <!-- <label for="mass">Enter the mass:</label> -->
+            <input type="number" name="planet-weight" id="mass" value="mass" placeholder="Mass In Kilograms">
+
+            <!-- <label for="planet">Choose a planet:</label> -->
+            <select id="planet" name="planet">
+                <option value="Earth">Earth</option>
+                <option value="Jupiter">Jupiter</option>
+                <option value="Mars">Mars</option>
+                <option value="Mercury">Mercury</option>
+                <option value="Neptune">Neptune</option>
+                <option value="Pluto">Pluto</option>
+                <option value="Saturn">Saturn</option>
+                <option value="Uranus">Uranus</option>
+                <option value="Venus">Venus</option>
+            </select>
+            <input type="button" onclick="calculateWeight()" value="Calculate Weight" id="calculate-button">
+            <!-- <button type="submit" onclick="calculateWeight()" id="calculate-button">Calculate Weight</button> -->
+        </form>
+    </nav>
+
+    <!-- SECTION -->
+    <section class="section">
+        <div id="standby-overlay">Insert Mass and Select a Planet</div>
+        <!-- OVERLAY -->
+        <div id="overlay">
+            <!-- PLANET IMG -->
+            <div id="planet-img-div">
+                
+            </div>
+            <!-- WEIGHT DISPLAY -->
+            <div class="weight-display">
+                <div id="weight-display-title">
+                    Weight of the object on <span id="planet-var">PLANET</span>
+                </div>
+                <div id="weight-display-number">
+                    WEIGHT
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <script src="./script.js"> </script> -->
+</body>
+</html>

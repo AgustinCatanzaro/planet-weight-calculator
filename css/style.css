@@ -1,0 +1,152 @@
+/* CONTAINERS */
+:root {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-shadow: 1px 2px 2px #000000;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url(/images/spacebackground.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    box-sizing: border-box;
+    min-width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+header {
+    /* border: 2px solid red; */
+    height: 15vh;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 7.5vh;
+    margin: 0 0;
+}
+
+nav {
+    /* border: 2px solid green; */
+    height: 10vh;
+    vertical-align: middle;
+    box-sizing: border-box;
+    line-height: 10vh;
+    margin: 0 0;
+    margin-left: 25vw;
+    text-align: center;
+    width: 50vw;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5%;
+}
+
+section {
+    /* border: 2px solid yellow; */
+    position: relative;
+    height: 75vh;
+    margin: 0;
+}
+/* ///CONTAINERS */
+
+
+
+/* WHITE OVERLAY */
+#overlay {
+    /* border: 1px solid wheat; */
+    visibility: hidden;
+    height: 80%;
+    width: 80%;
+    position: relative;
+    margin-left: 10%;
+    margin-top: 1%;
+    background: rgba(255, 255, 255, 0.2);
+}
+#standby-overlay {
+    /* border: 1px solid wheat; */
+    position: absolute;
+    height: 25%;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+    text-align: center;
+    font-size: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    line-height: 550%;
+}
+
+
+/* PLANET IMG */
+
+#planet-img-div {
+    /* border: 1px solid red; */
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    width: 45%;
+    margin: 0;
+    /* background: url(./images/earth.png); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-size: 80%;
+}
+
+.weight-display {
+    /* border: 1px solid green; */
+    position: relative;
+    box-sizing: border-box;
+    width: 45%;
+    height: 50%;
+    left: 50%;
+    bottom: 80%;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: larger;
+}
+
+#weight-display-title {
+    /* border: 1px solid yellow; */
+    height: 30%;
+    text-align: center;
+    padding-top: 3%;
+}
+
+#weight-display-number {
+    /* border: 1px solid orange; */
+    position: relative;
+    box-sizing: border-box;
+    width: 40%;
+    height: 50%;
+    margin-left: 30%;
+    text-align: center;
+    font-size: 25px;
+    line-height: 450%; 
+    /* line-height para alinear el texto dentro del circulo de forma central, no se xq tengo q usar un porcentaje tan alto. */
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 90%;
+}
+
+
+/* FORM STYLING */
+
+input, select {
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+    height: 40px;
+    border: 1px solid wheat;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+select {
+    box-sizing: border-box;
+}
+label {
+    /*margin-bottom: -5px;*/
+    margin: -50px;
+}
+#calculate-button {
+    border-radius: 7.5%;
+    height: 50px;
+}
